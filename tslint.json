@@ -1,0 +1,9 @@
+{
+     "extends": ["tslint:recommended"   ],
+     "defaultSeverity" : "error",
+     "rulesDirectory": [],
+     "rules": {
+          "trailing-comma" : [false]
+     },
+     "jsRultslint.es":{}
+ }
