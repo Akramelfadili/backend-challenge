@@ -1,20 +1,21 @@
 {
   "compilerOptions": {
+    "resolveJsonModule": true,
     "esModuleInterop": true,
-    "target": "ES6",
-    "noImplicitAny": true, 
-    "moduleResolution": "node", 
-    "sourceMap": true,
+    "sourceMap": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
     "outDir" : "dist",
+    "strict": false,
     "baseUrl": ".",
+     "types": [
+      "node"
+    ],
     "paths": {
-      "*" : [
-        "node_modules/*"
-      ]
-    },
+      "src/*": ["src/*"],
+    }
   },
   "include": ["src/**/*"],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules", "src/**/*.spec.ts"]
 }
+

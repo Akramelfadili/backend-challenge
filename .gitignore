@@ -5,3 +5,4 @@ yarn-error.log*
 # Dependency directories
 node_modules/
 dist/
+.env

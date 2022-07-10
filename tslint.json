@@ -1,9 +1,17 @@
 {
      "extends": ["tslint:recommended"   ],
      "defaultSeverity" : "error",
+     
      "rulesDirectory": [],
      "rules": {
-          "trailing-comma" : [false]
+          "variable-name": [
+               true,
+               "allow-leading-underscore"
+          ],
+          "trailing-comma" : [false],
+          "no-console": false
+      
      },
-     "jsRultslint.es":{}
+     "jsRultslint.es":{},
+     "prefer-const": "false"
  }

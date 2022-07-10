@@ -1,14 +1,16 @@
 import express from "express"
 import { Request, Response } from 'express';
+import { getAllCategories} from "./database/categories";
+import {} from 'dotenv/config'
 
 const app = express()
-app.listen(3000)
+const port = process.env.PORT || 3000
 
 
-app.get('/', (req : Request, res : Response) => {
-     res.json({
-          typescript : true,
-          akram : true
-     })
-   })
+app.get('/categories', async (request : Request, response : Response) => {
+    const results = await getAllCategories()
+    response.status(200).json(results)
+})
+
+app.listen(port, () => console.log(`Server is running on port :${port}`))
 
