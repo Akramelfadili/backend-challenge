@@ -1,7 +1,7 @@
-export interface Categorie {
+export interface Category {
      id : number
      name : string
-     children ?: Categorie[]
+     children ?: Category[]
 
 }
 
